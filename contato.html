@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Contato - Forja de Frel</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo Forja de Frel"></h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home-Jorjão</a></li>
+						<li><a href="forja.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="m-contato">
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email"> Email </label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@domínio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem"></textarea class="input-padrao" required>
+
+				<fieldset>
+					<legend>Como prefere que entremos em contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" valeu="email" id="radio-email">Email</label>
+					<label for="radio-telefone"><input type="radio" name="contato" valeu="telefone" id="radio-telefone">Telefone</label>
+					<label for="radio-whatsapp"><input type="radio" name="contato" valeu="whatsApp" id="radio-whatsapp" checked>WhatsApp</label>
+					
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
+			</form>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Seg-Sex</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Sab-Dom</td>
+						<td>9h ~ 17h</td>
+					</tr>
+					<tr>
+						<td>Feriados</td>
+						<td>10h ~ 15h</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		<footer>
+			<img src="logo.png" alt="Logo Forja de Frel">
+			<p class="copyright">&copy; Copyrigth Forja de Frel -2022 Todos os direitos reservados à Jorjão.</p>
+		</footer>
+
+	</body>
+</html>
